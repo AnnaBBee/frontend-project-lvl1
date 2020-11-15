@@ -10,6 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Eslint check
-    uses: actions/push@main
-    run: |
+    - run: |
         make lint

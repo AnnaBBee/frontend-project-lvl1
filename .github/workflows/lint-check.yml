@@ -3,14 +3,13 @@ name: lint-check
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out Git repository
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
         node-version: '14'
